@@ -1431,3 +1431,25 @@ footer {
 
 }
 
+.mailbutton {
+	 background: none repeat scroll 0 0 #ffd42d;
+    border: medium none;
+    border-radius: 4px;
+    bottom: -19px;
+    color: black;    
+    font-size: 22px;
+    font-weight: 200;
+    height: 43px;
+    padding-top: 4px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 120px;
+}
+
+.contact-form{
+	 bottom: 24px;
+    position: relative;
+
+
+}
