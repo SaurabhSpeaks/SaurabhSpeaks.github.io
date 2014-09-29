@@ -106,7 +106,10 @@
 											<div class="p-info"><em>Phone</em><span>+91-89528-25525</span></div>
 										</li>
 										<li>
-											<div class="p-info"><em>Website</em><span>SaurabhSpeaks.github.io</span></div>
+											<div class="p-info"><em>Website</em><span><a href="http://www.saurabhspeaks.com">http://www.saurabhspeaks.com</a> </span></div>
+										</li>
+										<li>
+											<div class="p-info"><em>Intro</em><span><a href="http://www.youtube.com">Intro video</a></span></div>
 										</li>
 									</ul>
 								</div>
@@ -553,12 +556,31 @@
 								Email: saurabh.bhatia0990@gmail.com</div>
 								<div class="contact-form">
 									<h4>Send us a message</h4>
-									
-									<br/>
-									<a class="mailbutton" href="mailto:saurabh.bhatia0990@gmail.com?Subject=Contact Enquirey" target="_top">Send Mail</a>
-									
+									<form id="contactForm" action="php/contact.php" method="post">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" name="senderName" id="senderName" placeholder="name">
+												<input type="email" name="senderEmail" id="senderEmail" placeholder="e-mail">
+												<input type="text" name="subject" id="subject" placeholder="Subject">
+											</div>
+											<div class="col-md-8">
+												<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+												
+												<button type="submit">Send Message</button>
+											</div>
+										</div>
+									</form>
+									<div id="successMessage" class="successmessage">
+										<p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
 									</div>
-									
+									<div id="failureMessage" class="errormessage">
+										<p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p>
+									</div>
+									<div id="incompleteMessage" class="statusMessage">
+										<p>Please complete all the fields in the form before sending.</p>
+									</div>
+								</div>
+							</div>
 						</section>
 						<!-- SECTION 5 - CONTACT -->
 					</div>
